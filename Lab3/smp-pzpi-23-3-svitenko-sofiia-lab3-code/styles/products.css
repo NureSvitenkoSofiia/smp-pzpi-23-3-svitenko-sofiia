@@ -1,0 +1,96 @@
+.product-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.product-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: minmax(200px, 3fr) minmax(80px, 1fr) minmax(100px, 1fr);
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+.product-info {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #2c3e50;
+}
+
+.product-description {
+    font-size: 0.875rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+.product-input {
+    width: 4rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.375rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.product-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.product-price {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #16a085;
+    text-align: right;
+}
+
+.submit-button {
+    margin-top: 1.5rem;
+    align-self: flex-end;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+.submit-button:active {
+    transform: translateY(1px);
+}
+
+.validation-error {
+    background-color: #ffecec;
+    border-left: 4px solid #e74c3c;
+    color: #c0392b;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+}

@@ -1,0 +1,35 @@
+.cart-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.empty-cart-message {
+    text-align: center;
+    padding: 20px;
+}
+
+.shop-link {
+    color: #3498db;
+    text-decoration: underline;
+}
