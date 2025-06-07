@@ -1,4 +1,5 @@
 #!/bin/bash
+
 convert_csv_data() {
     iconv -f cp1251 -t UTF-8 "$data_file"| tr '\r' '\n' | awk -F'","' -v group_arg="$group" '
     function format_time_to_ampm(time_string, temp_array, hrs, mins, period, formatted_output) {
@@ -27,8 +28,8 @@ convert_csv_data() {
             split($4, date_parts, ".");
             transformed_end_date = date_parts[2] "/" date_parts[1] "/" date_parts[3];
 
-            transformed_start_time = convert_time_format($3)
-            transformed_end_time = convert_time_format($5)
+            transformed_start_time = format_time_to_ampm($3)
+            transformed_end_time = format_time_to_ampm($5)
             
             print course "+" transformed_start_date "+" transformed_start_time "+" transformed_end_date "+" transformed_end_time "+" $12
         }
