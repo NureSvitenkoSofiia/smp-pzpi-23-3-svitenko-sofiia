@@ -65,22 +65,26 @@ class GroceryStore {
         }
     }
 
-    private function configureProfile(): void {
-        $init = 0;
+    private function configureProfile(): void
+    {
+        $firstTry = true;
         do {
-            $name = readline("Ваше імʼя: ");
-            if($init != 0){
-                echo ("Імʼя користувача не може бути порожнім і повинно містити хоча б одну літеру.\n");
+            if (!$firstTry) {
+                echo "Імʼя користувача не може бути порожнім і повинно містити хоча б одну літеру.\n";
             }
+            $name = readline("Ваше імʼя: ");
+            $firstTry = false;
         } while (!preg_match('/\p{L}/u', $name));
 
         $this->username = $name;
-        $init = 0;
+
+        $firstTry = true;
         do {
-            if($init != 0){
-                echo ("Користувач не може бути молодшим 7-ми або старшим 150-ти років\n");
+            if (!$firstTry) {
+                echo "Користувач не може бути молодшим 7-ми або старшим 150-ти років\n";
             }
             $age = (int)readline("Ваш вік: ");
+            $firstTry = false;
         } while ($age < 7 || $age > 150);
 
         $this->userAge = $age;
