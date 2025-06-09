@@ -268,6 +268,7 @@
 
      ДОДАТОК А
      Повний код програми
+     Посилання на повіний код програми у GitHub:https://github.com/NureSvitenkoSofiia/smp-pzpi-23-3-svitenko-sofiia/tree/main/Lab1/smp-pzpi-23-3-svitenko-sofiia-lab1-code
        001: #!/bin/bash
        002: 
        003: convert_csv_data() {
@@ -490,7 +491,7 @@
 17:30 — Завершення, подяка
        
      
-     20
+     14
      
      
      

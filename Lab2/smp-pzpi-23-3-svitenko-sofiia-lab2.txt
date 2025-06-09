@@ -342,6 +342,7 @@
 
      Додаток В
      Повний код програми
+     Посилання на повний код програми на Github: https://github.com/NureSvitenkoSofiia/smp-pzpi-23-3-svitenko-sofiia/tree/main/Lab2/smp-pzpi-23-3-svitenko-sofiia-lab2-code
        001: #!/usr/bin/env php
        002: <?php
        003: 
@@ -521,6 +522,6 @@
        177: $app->run();
        178:
        
-     16
+     12
      
      
